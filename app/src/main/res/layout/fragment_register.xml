@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_image"
+    tools:context=".fragment.RegisterFragment">
+
+    <TextView
+        android:id="@+id/register_user_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:fontFamily="@font/archivo_bold"
+        android:text="@string/register_user"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/register_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_user_text">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_username"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@color/seconday_background"
+            android:textColorHint="@color/seconday_background" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_lastname"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@color/seconday_background"
+            android:textColorHint="@color/seconday_background" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:textColor="@color/seconday_background"
+            android:textColorHint="@color/seconday_background" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="@color/seconday_background"
+            android:textColorHint="@color/seconday_background"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:id="@+id/register_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/edit_text_background"
+            android:text="@string/register"
+            android:textColor="@color/seconday_background"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
